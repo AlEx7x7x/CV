@@ -6,18 +6,39 @@
 <title>Олександр Шиманський — CV</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Onest:wght@400;500&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav><div class="wrap"><a class="brand" href="#top">О. Шиманський</a><a href="#about">Про мене</a><a href="#skills">Навички</a><a class="hide" href="#edu">Освіта</a><a href="#contact">Контакти</a></div></nav>
-
-<header class="hero" id="top">
-  <canvas id="wave" aria-hidden="true"></canvas>
+<header class="hero">
   <div class="wrap">
-    <h1 aria-label="Олександр Шиманський"><span data-split>Олександр</span><span data-split>Шиманський</span></h1>
-    <p class="role">Студент-електронік, який пише код: від мікроконтролерів до вебу.</p>
-    <p class="hint">Рухай мишею або пальцем — хвиля змінює частоту й амплітуду.</p>
+    <div>
+      <h1><span>Олександр</span><span>Шиманський</span></h1>
+      <p class="role">Студент факультету електроніки, який пише код.</p>
+      <p class="meta">3 курс · ЛНУ</p>
+    </div>
+    <div class="chipbox">
+      <div class="chip" role="group" aria-label="Мікросхема з моїми навичками">
+        <div class="col">
+          <button class="pin l boot" style="--k:0" data-n="1" data-t="C — низькорівневе програмування"><small>1</small>C<i></i></button>
+          <button class="pin l boot" style="--k:1" data-n="2" data-t="C++ — об’єктно-орієнтоване програмування"><small>2</small>C++<i></i></button>
+          <button class="pin l boot" style="--k:2" data-n="3" data-t="Python — скрипти й швидкі прототипи"><small>3</small>Python<i></i></button>
+          <button class="pin l boot" style="--k:3" data-n="4" data-t="HTML — структура вебсторінок"><small>4</small>HTML<i></i></button>
+          <button class="pin l boot" style="--k:4" data-n="5" data-t="CSS — оформлення й анімації"><small>5</small>CSS<i></i></button>
+          <button class="pin l boot" style="--k:5" data-n="6" data-t="JavaScript — інтерактивність у браузері"><small>6</small>JS<i></i></button>
+        </div>
+        <div class="body"><b>SHYMANSKYI</b></div>
+        <div class="col">
+          <a class="pin r boot" style="--k:6" href="#about" data-n="12" data-t="Про мене — коротко про мене"><i></i>Про мене<small>12</small></a>
+          <a class="pin r boot" style="--k:7" href="#skills" data-n="11" data-t="Навички — повний перелік"><i></i>Навички<small>11</small></a>
+          <a class="pin r boot" style="--k:8" href="#edu" data-n="10" data-t="Освіта — де я вчуся"><i></i>Освіта<small>10</small></a>
+          <a class="pin r boot" style="--k:9" href="#contact" data-n="9" data-t="Контакти — як зі мною зв’язатися"><i></i>Контакти<small>9</small></a>
+          <button class="pin r boot" style="--k:10" data-n="8" data-t="NC — не підключено: комерційного досвіду поки немає"><i></i>NC<small>8</small></button>
+          <button class="pin r boot" style="--k:11" data-n="7" data-t="GND — земля: тут я вчуся й росту"><i></i>GND<small>7</small></button>
+        </div>
+      </div>
+      <p class="readout" id="readout" aria-live="polite">Наведи на ніжку мікросхеми або торкнись її.</p>
+    </div>
   </div>
 </header>
 
@@ -26,36 +47,34 @@
   <h2>Про мене</h2>
   <div class="about">
     <p>Я вчуся на третьому курсі факультету електроніки ЛНУ. Мені подобається, коли схема й програма працюють разом, тому паралельно з навчанням пишу код і роблю власні проєкти.</p>
-    <p>Комерційного досвіду ще немає — вчуся на пет-проєктах і шукаю першу практику чи стажування, де зможу зростати поруч із сильною командою.</p>
+    <p>Комерційного досвіду ще немає. Я навчаюся на пет-проєктах і шукаю першу практику чи стажування, де зможу зростати поруч із сильною командою.</p>
   </div>
 </div></section>
 
 <section id="skills"><div class="wrap">
   <h2>Навички</h2>
-  <div class="grid">
-    <div class="card"><h3>Системні мови</h3><div class="tags"><span>C</span><span>C++</span></div></div>
-    <div class="card"><h3>Скрипти й дані</h3><div class="tags"><span>Python</span></div></div>
-    <div class="card"><h3>Веб</h3><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div>
-  </div>
+  <dl class="sheet" style="margin:0">
+    <div><dt>Системні мови</dt><dd class="tg"><span>C</span><span>C++</span></dd></div>
+    <div><dt>Скрипти й дані</dt><dd class="tg"><span>Python</span></dd></div>
+    <div><dt>Веб</dt><dd class="tg"><span>HTML</span><span>CSS</span><span>JavaScript</span></dd></div>
+    <div><dt>Досвід</dt><dd>Власні пет-проєкти</dd></div>
+  </dl>
 </div></section>
 
 <section id="edu"><div class="wrap">
   <h2>Освіта</h2>
-  <div class="edu">
-    <b>3 курс</b>
-    <div><b>Факультет електроніки, ЛНУ</b><br><small>Бакалаврська програма, денна форма</small></div>
-  </div>
+  <div class="edu"><b>Факультет електроніки, ЛНУ</b><p>3 курс, бакалаврська програма</p></div>
 </div></section>
 
 <section id="contact"><div class="wrap">
-  <h2>Давайте зв’яжемось</h2>
-  <p style="max-width:50ch;margin:0 0 28px">Пишіть, якщо є пропозиція про практику, стажування чи спільний проєкт.</p>
-  <div class="mail">
+  <h2>Контакти</h2>
+  <p style="max-width:50ch;margin:0 0 26px">Пишіть, якщо є пропозиція про практику, стажування чи спільний проєкт.</p>
+  <div class="actions">
     <a class="btn" href="mailto:sashashymanskyi@gmail.com">Написати листа</a>
     <button class="btn alt" id="copy" type="button">Скопіювати адресу</button>
     <span class="toast" id="toast" role="status">Скопійовано</span>
   </div>
-  <p style="color:var(--muted);margin-top:20px">sashashymanskyi@gmail.com</p>
+  <p style="color:var(--muted);margin-top:18px">sashashymanskyi@gmail.com</p>
 </div></section>
 </main>
 <footer><div class="wrap">© 2026 Олександр Шиманський</div></footer>
