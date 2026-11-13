@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Олександр Шиманський — CV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav><div class="wrap"><a class="brand" href="#top">О. Шиманський</a><a href="#about">Про мене</a><a href="#skills">Навички</a><a class="hide" href="#edu">Освіта</a><a href="#contact">Контакти</a></div></nav>
+
+<header class="hero" id="top">
+  <canvas id="wave" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <h1 aria-label="Олександр Шиманський"><span data-split>Олександр</span><span data-split>Шиманський</span></h1>
+    <p class="role">Студент-електронік, який пише код: від мікроконтролерів до вебу.</p>
+    <p class="hint">Рухай мишею або пальцем — хвиля змінює частоту й амплітуду.</p>
+  </div>
+</header>
+
+<main>
+<section id="about"><div class="wrap">
+  <h2>Про мене</h2>
+  <div class="about">
+    <p>Я вчуся на третьому курсі факультету електроніки ЛНУ. Мені подобається, коли схема й програма працюють разом, тому паралельно з навчанням пишу код і роблю власні проєкти.</p>
+    <p>Комерційного досвіду ще немає — вчуся на пет-проєктах і шукаю першу практику чи стажування, де зможу зростати поруч із сильною командою.</p>
+  </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2>Навички</h2>
+  <div class="grid">
+    <div class="card"><h3>Системні мови</h3><div class="tags"><span>C</span><span>C++</span></div></div>
+    <div class="card"><h3>Скрипти й дані</h3><div class="tags"><span>Python</span></div></div>
+    <div class="card"><h3>Веб</h3><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div>
+  </div>
+</div></section>
+
+<section id="edu"><div class="wrap">
+  <h2>Освіта</h2>
+  <div class="edu">
+    <b>3 курс</b>
+    <div><b>Факультет електроніки, ЛНУ</b><br><small>Бакалаврська програма, денна форма</small></div>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <h2>Давайте зв’яжемось</h2>
+  <p style="max-width:50ch;margin:0 0 28px">Пишіть, якщо є пропозиція про практику, стажування чи спільний проєкт.</p>
+  <div class="mail">
+    <a class="btn" href="mailto:sashashymanskyi@gmail.com">Написати листа</a>
+    <button class="btn alt" id="copy" type="button">Скопіювати адресу</button>
+    <span class="toast" id="toast" role="status">Скопійовано</span>
+  </div>
+  <p style="color:var(--muted);margin-top:20px">sashashymanskyi@gmail.com</p>
+</div></section>
+</main>
+<footer><div class="wrap">© 2026 Олександр Шиманський</div></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
